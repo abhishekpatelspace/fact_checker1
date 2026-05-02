@@ -1,0 +1,12 @@
+This project is a Machine Learning-powered Fact-Checking Web Application built with Streamlit. It is designed to automatically classify political statements and online claims as real (true) or fake (false) by analyzing the linguistic structures of the text.
+
+The application features a complete end-to-end data pipeline:
+
+Data Acquisition: It dynamically scrapes historical fact-check records from PolitiFact and integrates with the Google Fact Check Tools API to fetch and benchmark against real-time claims.
+Feature Engineering (NLP): Utilizing spaCy and TextBlob, the system extracts five distinct linguistic feature sets from the text to understand the claims better: Lexical & Morphological (vocabulary), Syntactic (grammar/POS tags), Semantic (sentiment/subjectivity), Discourse (argument structure), and Pragmatic (intent-based keywords).
+Robust ML Pipeline: The system trains multiple classification models—including Naive Bayes, Decision Trees, Logistic Regression, and Support Vector Machines (SVM). To ensure reliable performance, the pipeline utilizes Stratified K-Fold Cross-Validation and applies SMOTE (Synthetic Minority Over-sampling Technique) to handle class imbalances in the fact-check data.
+Interactive Evaluation: The app provides a comprehensive dashboard to evaluate models based on Accuracy, F1-Score, Precision, Recall, and Inference Latency. It also features a dynamic benchmarking tool to test the trained models against live Google Fact Check data, complete with a unique, humorous critique generator that explains the winning model's behavior.
+Tech Stack: Python, Streamlit, Scikit-Learn, Imbalanced-Learn, SpaCy, TextBlob, BeautifulSoup (for Web Scraping), and the Google API.
+
+Shorter Version (e.g., for a Resume or LinkedIn)
+Automated Fact-Checking NLP Pipeline Built a Streamlit web application that classifies political statements as true or false. Engineered an end-to-end NLP pipeline using SpaCy and TextBlob to extract lexical, syntactic, and semantic features from text. Trained and evaluated multiple ML classifiers (SVM, Logistic Regression) using K-Fold validation and SMOTE for imbalanced data. Integrated web scraping (BeautifulSoup) and the Google Fact Check API to dynamically gather data and benchmark model performance in real-time.
