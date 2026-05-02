@@ -62,4 +62,3 @@ This application is designed to be easily deployed on Streamlit Community Cloud.
    * **Cloud:** Add the exact same string to the Streamlit Cloud Dashboard's Secret management.
 4. Run locally: `streamlit run app.py`
 
-*(Note: For Streamlit Cloud deployment, ensure the Advanced Settings are configured to use Python 3.12 to maintain compatibility with the TensorFlow and SpaCy dependencies).*
