@@ -1,0 +1,11 @@
+This Version is best version and to be hosted on streamlit
+sg.py is for local testing
+app.py is for deployment on streamlit
+
+# Deploy on streamlit
+# git init
+# git add .
+# git commit -m "initial commit"
+# git remote add origin <remote_repo_url>
+# git branch -M main
+# git push -u origin main
